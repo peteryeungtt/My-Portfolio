@@ -41,7 +41,6 @@ html {
   width: 3.5em;
   filter: invert(100%);
 }
-
 .headline {
   background-color: var(--color-primary);
   width: 100%;
@@ -49,20 +48,21 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .headline-wrapper {
-  padding-left: 2.2em;
+  padding: 2em;
 }
 
 .greeting-title {
-  color: var(--color-secondary);
+  color: #ff6b00;
   font-size: 5.6em;
-  font-family: var(--font-crete-round);
+  font-family: "Crete Round", serif;
   font-weight: 400;
 }
 
-.greeting-description {
+.greeting-description1 {
   color: var(--color-white);
   font-family: var(--font-roboto);
   font-weight: 600;
@@ -77,4 +77,24 @@ html {
   font-size: 1.6em;
   font-style: normal;
   line-height: 1.5em;
+}
+
+.headline-social-media-links {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-link li {
+  list-style-type: none;
+}
+
+.social-media-link {
+  margin-right: 1em;
+}
+
+.illustration {
+  position: absolute;
+  right: -280;
+  bottom: 0;
+  rotate: -17deg;
 }
