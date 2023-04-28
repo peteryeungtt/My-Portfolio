@@ -53,7 +53,6 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 [My Portfolio Project] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
 **[My Portfolio Project]** is a my first project I needed to design for as a student in Microverse.
 
@@ -61,7 +60,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+
 
 <details>
   <summary>Client</summary>
@@ -75,7 +74,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+
 
 - **[Display my Portfolio]**
 
@@ -115,7 +114,7 @@ git clone https://github.com/peteryeungtt/My-Portfolio.git
 
 ## 👥 Authors <a name="authors"></a>
 
-> Mention all of the collaborators of this project.
+
 
 👤 **Author**
 
@@ -131,7 +130,7 @@ git clone https://github.com/peteryeungtt/My-Portfolio.git
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+
 
 I would like to thank Microverse for this opportunity to use this project to learn coding
 
