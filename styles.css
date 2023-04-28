@@ -1,3 +1,12 @@
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --font-crete-round: "Crete Round", serif;
+  --font-poppins: "Poppins", sans-serif;
+  --color-primary: #1c1a19;
+  --color-secondary: #ff6b00;
+  --color-white: white;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +14,13 @@
   text-decoration: none;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .navbar {
   background-color: #3c3a39;
-  padding: 20px;
+  padding: 2em;
 }
 
 .navbar-wrapper {
@@ -18,12 +31,50 @@
 }
 
 .my-logo {
-  color: white;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-size: 2em;
+  font-weight: 200;
 }
 
 .hamburger-menu {
-  width: 35px;
+  width: 3.5em;
   filter: invert(100%);
+}
+
+.headline {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 59em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline-wrapper {
+  padding-left: 2.2em;
+}
+
+.greeting-title {
+  color: var(--color-secondary);
+  font-size: 5.6em;
+  font-family: var(--font-crete-round);
+  font-weight: 400;
+}
+
+.greeting-description {
+  color: var(--color-white);
+  font-family: var(--font-roboto);
+  font-weight: 600;
+  font-size: 2.4em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.greeting-description2 {
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+  font-size: 1.6em;
+  font-style: normal;
+  line-height: 1.5em;
 }
