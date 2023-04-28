@@ -41,6 +41,7 @@ html {
   width: 3.5em;
   filter: invert(100%);
 }
+
 .headline {
   background-color: var(--color-primary);
   width: 100%;
