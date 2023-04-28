@@ -16,16 +16,12 @@
 
 html {
   font-size: 62.5%;
+  z-index: 1;
 }
 
 .navbar {
   background-color: #3c3a39;
   padding: 2em;
-  z-index: 9999;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
 }
 
 .navbar-wrapper {
@@ -56,10 +52,12 @@ html {
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
 
 .headline-wrapper {
-  padding: 2em;
+  padding-left: 2rem;
+  z-index: 0;
 }
 
 .greeting-title {
@@ -101,11 +99,13 @@ html {
 }
 
 .illustration {
-  position: absolute;
-  right: -280;
-  bottom: 0;
-  rotate: -17deg;
+  background-image: url("/images/illustration.svg");
+  background-repeat: no-repeat;
+  background-position: -20px 230px;
+  width: 100%;
+  height: 100%;
   z-index: 1;
+  display: inline-block;
 }
 
 @media only screen and (min-width: 768px) {
@@ -118,12 +118,13 @@ html {
   }
 
   .headline {
-    justify-content: flex-start;
+    display: flex;
+    justify-content: right;
   }
 
   .headline-wrapper {
-    width: 50%;
-    padding-left: 20px;
+    width: 100%;
+    padding-left: 60px;
   }
 
   .greeting-title {
@@ -135,7 +136,13 @@ html {
   }
 
   .illustration {
-    right: -150px;
-    width: 600px;
+    background-position: 100% -7.5rem;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .headline-wrapper {
+    padding-left: 180px;
   }
 }
