@@ -42,7 +42,6 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -79,14 +78,6 @@ The purpose is to learn to use flex and grid in this project.
 - **[Mobile Version]**
 - **[Using Flexbox]**
 - **[Using Grid]**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://rawcdn.githack.com/peteryeungtt/My-Portfolio/b34888391911b4f667e807021bd5a65a2edfa0e4/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
