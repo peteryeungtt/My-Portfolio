@@ -189,8 +189,10 @@ html {
 }
 
 .see-work-btn:hover {
-  background-color: var(--color-white);
+  background-color: #fff5e1;
   color: var(--color-secondary);
+  outline-color: var(--color-secondary);
+  outline-style: solid;
 }
 
 .see-work-btn:focus {
@@ -256,8 +258,10 @@ html {
 }
 
 .other-work-see-btn:hover {
-  background-color: var(--color-white);
+  background-color: #fff5e1;
   color: var(--color-secondary);
+  outline-color: var(--color-secondary);
+  outline-style: solid;
 }
 
 .other-work-see-btn:focus {
@@ -318,8 +322,10 @@ html {
 }
 
 .resume-btn:hover {
-  background-color: var(--color-white);
+  background-color: #fff5e1;
   color: var(--color-secondary);
+  outline-color: var(--color-secondary);
+  outline-style: solid;
 }
 
 .resume-btn:focus {
@@ -328,7 +334,7 @@ html {
 }
 
 .resume-btn:disabled {
-  background-color: var(--color-white);
+  background-color: #f4f1f0;
   color: #5b5957;
 }
 
