@@ -333,7 +333,8 @@
                   id="email"
                   name="email"
                   placeholder="Email address"
-                  required
+                  required 
+                  pattern="
                 />
               </li>
               <li>
@@ -342,7 +343,7 @@
                   name="message"
                   maxlength="500"
                   placeholder="Write me something..."
-                  required
+                  required="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 ></textarea>
               </li>
               <li class="form-button"><button type="submit">Get in touch</button></li>

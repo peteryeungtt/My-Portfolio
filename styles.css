@@ -493,6 +493,13 @@ background-position: bottom;
   padding: 1.2rem;
 }
 
+.form-button button:hover {
+background-color: #fff5e1;
+color: var(--color-secondary);
+outline-color: var(--color-secondary);
+outline-style: solid;
+}
+
 @media only screen and (min-width: 768px) {
   .navbar {
     padding: 2rem 2rem;
