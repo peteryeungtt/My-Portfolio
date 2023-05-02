@@ -20,7 +20,7 @@ html {
   z-index: 1;
 }
 
-ul, il{
+ul li {
   list-style: none;
 }
 
