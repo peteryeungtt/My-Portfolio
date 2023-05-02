@@ -430,8 +430,6 @@ background-repeat: no-repeat;
 background-position: bottom;
 }
 
-
-
 .social-media-icon{
   margin-left: 2.1rem;
 }
@@ -443,6 +441,16 @@ background-position: bottom;
   padding: 5vh 0 2vh 2vh;
   margin-bottom: 2vh;
 }
+
+.footer-text {
+  font-family: var(--font-inter);
+  font-size: 3.2rem;
+  line-height: 4.4rem;
+  text-align: center;
+  padding: 50px 25px 58px 23px;
+  font-weight: 700;
+}
+
 
 @media only screen and (min-width: 768px) {
   .navbar {
