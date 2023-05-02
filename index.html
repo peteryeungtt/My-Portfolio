@@ -309,7 +309,7 @@
     </section>
     <footer>
       <div class="contact-form-wrapper">
-        <form class="contact-form" method="POST" action="">
+        <form class="contact-form" method="POST" action="https://formspree.io/f/xpzbadnj">
           <div class="contact-info">
             <p class="footer-text">
               I'm always interested in hearing about new projects, so if you'd
@@ -334,7 +334,7 @@
                   name="email"
                   placeholder="Email address"
                   required 
-                  pattern="
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 />
               </li>
               <li>
@@ -343,7 +343,7 @@
                   name="message"
                   maxlength="500"
                   placeholder="Write me something..."
-                  required="a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                  required pattern=".{1,500}"
                 ></textarea>
               </li>
               <li class="form-button"><button type="submit">Get in touch</button></li>
