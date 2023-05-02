@@ -438,8 +438,33 @@ background-position: bottom;
   width: 100%;
   border: none;
   border-bottom: 0.5px solid lightgray;
-  padding: 5vh 0 2vh 2vh;
+  
   margin-bottom: 2vh;
+  padding: 1.6rem 1.5rem 1.6rem 1.5rem;
+}
+
+#name, #email {
+  font-family: var(--font-inter);
+  font-size:1.5rem ;
+  padding-left: 1.6rem;
+}
+
+#message{
+  font-family: var(--font-inter);
+  color: red;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  background-color: #FBF8F7 ;
+  width: 100%;
+  height: 9rem;
+  border-style: none;
+  margin-top: 15px;
+  
+}
+
+.input-wrapper textarea::placeholder {
+  color: #3C3A39;
 }
 
 .footer-text {
@@ -451,6 +476,9 @@ background-position: bottom;
   font-weight: 700;
 }
 
+.input-wrapper{
+  width:80%;
+}
 
 @media only screen and (min-width: 768px) {
   .navbar {
