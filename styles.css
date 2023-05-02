@@ -344,8 +344,8 @@ ul li {
 
 .about-me-illustration {
   position: absolute;
-  right: -200;
-  bottom: 0;
+  right: -100px;
+  bottom: 0px;
   width: 30rem;
 }
 
@@ -499,6 +499,16 @@ outline-color: var(--color-secondary);
 outline-style: solid;
 }
 
+input[type=text]:focus {
+  border: 3px solid var(--color-secondary);
+}
+
+input[type=email]:focus {
+  border: 3px solid var(--color-secondary);
+}
+textarea:focus, input:focus{
+  outline: none;
+}
 @media only screen and (min-width: 768px) {
   .navbar {
     padding: 2rem 2rem;
