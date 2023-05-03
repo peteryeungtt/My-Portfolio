@@ -78,7 +78,6 @@ ul li {
 
 .headline-wrapper {
   padding-left: 2rem;
-  z-index: 0;
 }
 
 .greeting-title {
@@ -91,7 +90,7 @@ ul li {
 .greeting-description1 {
   color: var(--color-white);
   font-family: var(--font-roboto);
-  font-weight: 600;
+  font-weight: 500;
   font-size: 2.4em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -103,6 +102,7 @@ ul li {
   font-size: 1.6em;
   font-style: normal;
   line-height: 1.5em;
+  font-weight: 200;
 }
 
 .headline-social-media-links {
@@ -144,24 +144,48 @@ ul li {
   .headline {
     display: flex;
     justify-content: right;
+    position: relative;
   }
+
+  .headline-social-media-links {
+    flex-direction: column;
+    position: absolute;
+    bottom: 20rem;
+    left: 1.8rem;
+
+
+  }
+
+  .headline-link-img {
+    margin-bottom: 1.3rem;
+  }
+
+
 
   .headline-wrapper {
     width: 100%;
     padding-left: 6em;
   }
 
+  .headline-wrapper {
+    padding-left: 10em;
+  }
+
   .greeting-title {
-    font-size: 7.2em;
+    font-size: 6.2em;
   }
 
   .greeting-description1 {
     font-size: 3.2em;
   }
 
+  .greeting-description2 {
+    font-size: 2em;
+  }
+
   .illustration {
-    background-position: 100% -7.5rem;
-    background-size: contain;
+    background-position: 4.5rem -7.5rem;
+    background-size: cover;
   }
 }
 
@@ -562,12 +586,4 @@ input[type="email"]:focus {
 textarea:focus,
 input:focus {
   outline: none;
-}
-
-
-
-@media only screen and (min-width: 1024px) {
-  .headline-wrapper {
-    padding-left: 18em;
-  }
 }
