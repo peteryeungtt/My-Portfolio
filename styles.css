@@ -385,6 +385,67 @@ ul li {
   color: #5b5957;
 }
 
+@media only screen and (min-width: 768px) {
+  .work-project-wrapper {
+    grid-column: 1 / span 2;
+    flex-direction: row;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .works-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+  }
+
+  .work-project-img {
+    width: 484px;
+  }
+
+  .work-project-title {
+    font-size: 40px;
+  }
+
+  .work-project-text {
+    margin-left: 2rem;
+  }
+
+  .work-project-title {
+    margin-left: 2rem;
+  }
+
+
+  .work-project-description {
+    font-size: 18px;
+    margin: 0 0 0 20px;
+  }
+
+  .work-info-tags {
+    margin: 20px 0 0 20px;
+  }
+
+  .see-work-btn {
+    display: inline-block;
+    margin: 20px 0 0 20px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1008px) {
+
+
+  .works-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .work-project-wrapper {
+    grid-column: 1 / span 3;
+  }
+
+}
 
 .about-me-section {
   background-color: var(--color-primary);
