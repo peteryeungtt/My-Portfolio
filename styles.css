@@ -133,6 +133,11 @@ ul li {
     padding: 2rem 2rem;
   }
 
+  .my-logo-wrapper {
+    margin-left: 8rem;
+
+  }
+
   .hamburger-menu {
     display: none;
   }
@@ -152,8 +157,6 @@ ul li {
     position: absolute;
     bottom: 20rem;
     left: 1.8rem;
-
-
   }
 
   .headline-link-img {
