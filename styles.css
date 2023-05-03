@@ -33,7 +33,6 @@ ul li {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999;
 }
 
 .my-logo {
@@ -46,6 +45,24 @@ ul li {
 .hamburger-menu {
   width: 3.5em;
   filter: invert(100%);
+}
+
+.right-menu {
+  display: flex;
+  justify-content: right;
+  width: 80%;
+}
+
+.menu-style {
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-right: 4rem;
+  color: var(--color-white);
+  display: none;
 }
 
 .headline {
@@ -109,6 +126,43 @@ ul li {
   width: 100%;
   height: 100%;
   display: inline-block;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 2rem 2rem;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .menu-style {
+    display: block;
+  }
+
+  .headline {
+    display: flex;
+    justify-content: right;
+  }
+
+  .headline-wrapper {
+    width: 100%;
+    padding-left: 6em;
+  }
+
+  .greeting-title {
+    font-size: 7.2em;
+  }
+
+  .greeting-description1 {
+    font-size: 3.2em;
+  }
+
+  .illustration {
+    background-position: 100% -7.5rem;
+    background-size: contain;
+  }
 }
 
 .works-title {
@@ -510,38 +564,7 @@ input:focus {
   outline: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .navbar {
-    padding: 2rem 2rem;
-  }
 
-  .hamburger-menu {
-    display: none;
-  }
-
-  .headline {
-    display: flex;
-    justify-content: right;
-  }
-
-  .headline-wrapper {
-    width: 100%;
-    padding-left: 6em;
-  }
-
-  .greeting-title {
-    font-size: 7.2em;
-  }
-
-  .greeting-description1 {
-    font-size: 3.2em;
-  }
-
-  .illustration {
-    background-position: 100% -7.5rem;
-    background-size: contain;
-  }
-}
 
 @media only screen and (min-width: 1024px) {
   .headline-wrapper {
