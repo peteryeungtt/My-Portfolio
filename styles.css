@@ -458,6 +458,20 @@ ul li {
   width: 30rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .about-me-text-wrapper {
+    width: 600px;
+    height: 300px;
+    margin-left: -200px;
+  }
+
+  .about-me-illustration {
+    width: 40%;
+    height: 300px;
+  }
+}
+
+
 .skills-section {
   width: 100%;
   background-color: var(--color-primary);
@@ -468,7 +482,7 @@ ul li {
 .about-me-line {
   width: 80%;
   height: 1px;
-  margin: 0 auto;
+  margin: 2rem auto;
   background-color: #5c5c69;
 }
 
@@ -479,6 +493,7 @@ ul li {
   font-size: 3.2rem;
   color: var(--color-white);
   list-style-type: none;
+  padding-bottom: 2rem;
 }
 
 .skill-wrapper {
@@ -511,6 +526,20 @@ ul li {
   font-weight: 400;
   font-size: 2.2rem;
   margin-top: 3rem;
+}
+
+.last-skill-wrapper {
+  margin-top: 1.3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .skills-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .last-skill-wrapper {
+    margin-top: 0;
+  }
 }
 
 .contact-form-wrapper {
