@@ -542,9 +542,7 @@ ul li {
   }
 }
 
-.contact-form-wrapper {
-  width: auto;
-}
+
 
 .contact-info {
   display: flex;
@@ -561,11 +559,6 @@ ul li {
   border-top: 0.5px solid lightgray;
   padding-top: 4vh;
   padding-bottom: 4vh;
-  color: #505f79;
-  background-color: var(--font-white);
-  background-image: url("./images/line.svg");
-  background-repeat: no-repeat;
-  background-position: bottom;
 }
 
 .social-media-icon {
@@ -647,4 +640,24 @@ input[type="email"]:focus {
 textarea:focus,
 input:focus {
   outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    margin-top: 4rem;
+  }
+
+  .contact-form-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .contact-info {
+    width: 600px;
+  }
+
+  .form-button {
+    justify-content: left;
+    padding-left: 0;
+  }
 }
