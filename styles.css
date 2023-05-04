@@ -1,6 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Crete+Round&family=Inter:wght@400;700&family=Poppins:wght@200;300;400;700&family=Roboto:wght@400;700&display=swap");
+
 :root {
   --font-roboto: "Roboto", sans-serif;
-  --font-crete-round: "Crete Round", serif;
+  --font-crete-round: "Crete Round";
   --font-poppins: "Poppins", sans-serif;
   --font-inter: "Inter", sans-serif;
   --color-primary: #1c1a19;
@@ -420,11 +422,11 @@ ul li {
   }
 
   .other-work-see-btn {
-    display: none;
+    visibility: hidden;
   }
 
   .other-work-wrapper:hover .other-work-see-btn {
-    display: block;
+    visibility: visible;
   }
 }
 
@@ -648,15 +650,15 @@ ul li {
 #name,
 #email {
   font-family: var(--font-inter);
-  font-size: 1.5rem;
-  padding-left: 1.6rem;
+  font-size: 1.7rem;
+  padding-left: 1rem;
 }
 
 #message {
   font-family: var(--font-inter);
   font-style: italic;
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   background-color: #fbf8f7;
   width: 100%;
   height: 9rem;
@@ -689,10 +691,12 @@ ul li {
 }
 
 .form-button button {
+  font-family: var(--font-roboto);
   color: #fff;
   background-color: #ff6b00;
   border: 0;
   padding: 1.2rem;
+  font-size: 1.7rem;
 }
 
 .form-button button:hover {
