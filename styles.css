@@ -98,7 +98,7 @@ ul li {
 
 .greeting-description2 {
   color: var(--color-white);
-  font-family: var();
+  font-family: var(--font-inter);
   font-size: 1.6em;
   font-style: normal;
   line-height: 1.5em;
@@ -186,7 +186,7 @@ ul li {
 .works-title {
   font-family: "Crete Round", serif;
   font-weight: 400;
-  color: #091E42;
+  color: #091e42;
   font-size: 40px;
   text-align: center;
   margin-top: 5rem;
@@ -441,13 +441,10 @@ ul li {
 .about-me-section {
   background-color: var(--color-primary);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: left;
   position: relative;
   margin-top: 5rem;
   padding-top: 2rem;
-  padding-bottom: 8rem;
+  padding-bottom: 11rem;
   overflow: hidden;
 }
 
@@ -481,10 +478,9 @@ ul li {
   border: none;
   cursor: pointer;
   margin: 20px 20px;
-  display: block;
   width: 156px;
   height: 48px;
-  padding: 10px 0;
+  padding: 20px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -515,9 +511,15 @@ ul li {
 }
 
 @media only screen and (min-width: 768px) {
+  .about-me-title {
+    font-size: 7.2rem;
+  }
+
   .about-me-description {
     width: 70%;
     line-height: 3.2rem;
+    font-size: 2rem;
+    font-style: normal;
   }
 
   .about-me-text-wrapper {
@@ -603,7 +605,6 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr;
     display: flex;
     justify-content: space-around;
-
   }
 
   .last-skill-wrapper {
@@ -612,9 +613,7 @@ ul li {
 
   .skill-wrapper {
     align-items: first baseline;
-
   }
-
 }
 
 .contact-info {
