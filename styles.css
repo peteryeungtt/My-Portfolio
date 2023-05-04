@@ -89,7 +89,7 @@ ul li {
 
 .greeting-description1 {
   color: var(--color-white);
-  font-family: var(--font-roboto);
+  font-family: var(--font-inter);
   font-weight: 500;
   font-size: 2.4em;
   margin-top: 0.5em;
@@ -98,7 +98,7 @@ ul li {
 
 .greeting-description2 {
   color: var(--color-white);
-  font-family: var(--font-poppins);
+  font-family: var();
   font-size: 1.6em;
   font-style: normal;
   line-height: 1.5em;
@@ -186,7 +186,7 @@ ul li {
 .works-title {
   font-family: "Crete Round", serif;
   font-weight: 400;
-  color: #1c1a19;
+  color: #091E42;
   font-size: 40px;
   text-align: center;
   margin-top: 5rem;
@@ -446,7 +446,8 @@ ul li {
   justify-content: left;
   position: relative;
   margin-top: 5rem;
-  padding: 5rem 0;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
   overflow: hidden;
 }
 
@@ -467,6 +468,7 @@ ul li {
   font-weight: 400;
   font-style: normal;
   line-height: 24px;
+  width: 90%;
 }
 
 .resume-btn {
@@ -482,8 +484,10 @@ ul li {
   display: block;
   width: 156px;
   height: 48px;
-  text-align: center;
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .resume-btn:hover {
@@ -511,13 +515,18 @@ ul li {
 }
 
 @media only screen and (min-width: 768px) {
+  .about-me-description {
+    width: 70%;
+    line-height: 3.2rem;
+  }
+
   .about-me-text-wrapper {
     width: 600px;
     height: 300px;
   }
 
   .about-me-illustration {
-    width: 40%;
+    width: 55%;
     height: 300px;
   }
 }
@@ -562,7 +571,7 @@ ul li {
 
 .skill-title-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-top: 4rem;
 }
@@ -592,11 +601,20 @@ ul li {
 @media only screen and (min-width: 768px) {
   .skills-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
+
   }
 
   .last-skill-wrapper {
     margin-top: 0;
   }
+
+  .skill-wrapper {
+    align-items: first baseline;
+
+  }
+
 }
 
 .contact-info {
@@ -653,6 +671,7 @@ ul li {
 
 .footer-text {
   font-family: var(--font-inter);
+  color: #262626;
   font-size: 3.2rem;
   line-height: 4.4rem;
   text-align: center;
