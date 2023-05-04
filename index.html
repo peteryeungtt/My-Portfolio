@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Crete+Round&family=Inter:wght@400;700&family=Poppins:wght@300;700&&family=Roboto:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Meera+Inimai&family=Crete+Round&family=Inter:wght@400;700&family=Poppins:wght@200;300;400;700&family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -16,26 +16,39 @@
 
   <body>
     <header class="navbar">
-      <div class="navbar-wrapper">
-        <a class="my-logo" href="#">My Logo</a>
-        <nav>
+      <nav class="navbar-wrapper">
+      <div class="my-logo-wrapper"><a class="my-logo" href="#">My Logo</a>
+      </div>
+      <div class="right-menu">
+        <a class="menu-style" href="#work">Portoflio</a>
+        <a class="menu-style" href="#about">About</a>
+        <a class="menu-style" href="#contact">Contact</a>
+        <a href=""><img
+          class="menu-style"
+          src="images/mail.svg"
+          alt="email"
+          /></a>
+        </div>
+      <div class="">
           <img
             class="hamburger-menu"
             src="images/hamburger.svg"
             alt="Hamburger Menu"
           />
+        </div>
         </nav>
-      </div>
+      
     </header>
     <section class="headline">
       <div class="headline-wrapper">
-        <h1 class="greeting-title">Hey There.<br />I’m Peter.</h1>
-        <p class="greeting-description1">I'm a Software Developer</p>
-        <p class="greeting-description2">
-          I can help you build a product , feature or website Look through some
-          of my work and experience! If you like what you see and have a project
-          you need coded, don’t hesitate to contact me.
-        </p>
+        <div class="header-greeting"> <h1 class="greeting-title">Hey There.<br />I’m Peter.</h1>
+          <h2 class="greeting-description1">I'm a Software Developer</h2>
+          <p class="greeting-description2">
+            I can help you build a product , feature or website Look through some
+            of my work and experience! If you like what you see and have a project
+            you need coded, don’t hesitate to contact me.
+          </p></div>
+       
         <ul class="headline-social-media-links">
           <li>
             <a class="social-media-link" href="#"
@@ -82,12 +95,11 @@
       <div class="illustration"></div>
     </section>
 
-    <section class="works-info">
+    <section class="works-info" id="work">
       <div class="works-title-wrapper">
-        <h2 class="works-title">My Recent Works</h2>
+        <div class="works-title-wrapper"><h2 class="works-title">My Recent Works</h2></div>
         <div class="works-title-line"></div>
       </div>
-
       <div class="works-wrapper">
         <div class="work-project-wrapper">
           <img
@@ -205,27 +217,25 @@
       </div>
     </section>
 
-    <section class="about-me-section">
-      <div class="about-me-text-wrapper">
-        <h2 class="about-me-title">About Me</h2>
-        <p class="about-me-description">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hesitate to
-          contact me.
-        </p>
-        <a class="resume-btn" href="#">Get My Resume</a>
-      
+    <section class="about-me-section" id="about">
+        <div class="about-me-text-wrapper"><h2 class="about-me-title">About Me</h2>
+          <p class="about-me-description">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If you
+            like what you see and have a project you need coded, don’t hesitate to
+            contact me.
+          </p>
+          <a class="resume-btn" href="#">Get My Resume</a>
+        </div>
       <img
         class="about-me-illustration"
         src="images/illustration2.svg"
         alt="About Me Illustration"
-      </div>
-      />
+        />
     </section>
+
     <section class="skills-section">
       <div class="about-me-line"></div>
-
       <ul class="skills-wrapper">
         <li>
           <ul class="skill-wrapper">
@@ -268,7 +278,6 @@
               >
                 <rect y="0.455811" width="18" height="18" fill="#FF6B00" />
               </svg>
-
               <h3 class="skill-title">Frameworks</h3>
             </li>
             <li class="skill">React.js</li>
@@ -278,7 +287,7 @@
           </ul>
         </li>
         <li>
-          <ul class="skill-wrapper">
+          <ul class="skill-wrapper last-skill-wrapper">
             <li class="skill-title-wrapper">
               <svg
                 class="skill-title-svg"
@@ -296,7 +305,6 @@
                   fill="#FF6B00"
                 />
               </svg>
-
               <h3 class="skill-title">Skills</h3>
             </li>
             <li class="skill">Database Management</li>
@@ -308,14 +316,18 @@
         </li>
       </ul>
     </section>
-    <footer>
-      <div class="contact-form-wrapper">
+
+    <footer id="contact">
+      <div>
         <form class="contact-form" method="POST" action="https://formspree.io/f/xpzbadnj">
+          <div class="contact-form-wrapper">
           <div class="contact-info">
             <p class="footer-text">
               I'm always interested in hearing about new projects, so if you'd
               like to chat please get in touch.
             </p>
+            </div>
+            <div class="contact-info">
             <ul class="input-wrapper">
               <li>
                 <input
@@ -351,6 +363,7 @@
               <li class="form-button"><button type="submit">Get in touch</button></li>
             </ul>
           </div>
+        </div>
           <ul class="contact-media-icons">
             <li>
               <a href="#"

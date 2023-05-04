@@ -125,7 +125,6 @@ git clone https://github.com/peteryeungtt/My-Portfolio.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Desktop Version]**
 - [ ] **[JavaScript implementation]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
