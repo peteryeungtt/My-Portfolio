@@ -54,11 +54,11 @@ ul li {
 }
 
 .menu-style {
-  font-family: Inter;
+  font-family: var(--font-inter);
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 2rem;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: center;
   margin-right: 4rem;
   color: var(--color-white);
@@ -135,7 +135,6 @@ ul li {
 
   .my-logo-wrapper {
     margin-left: 8rem;
-
   }
 
   .hamburger-menu {
@@ -147,7 +146,7 @@ ul li {
   }
 
   .headline {
-    justify-content: flex-start
+    justify-content: flex-start;
   }
 
   .headline-social-media-links {
@@ -163,10 +162,6 @@ ul li {
 
   .headline-wrapper {
     width: 100%;
-    padding-left: 6em;
-  }
-
-  .headline-wrapper {
     padding-left: 10em;
   }
 
@@ -403,16 +398,12 @@ ul li {
 
   .work-project-title {
     font-size: 40px;
+    margin-left: 2rem;
   }
 
   .work-project-text {
     margin-left: 2rem;
   }
-
-  .work-project-title {
-    margin-left: 2rem;
-  }
-
 
   .work-project-description {
     font-size: 18px;
@@ -427,12 +418,9 @@ ul li {
     display: inline-block;
     margin: 20px 0 0 20px;
   }
-
 }
 
 @media only screen and (min-width: 1008px) {
-
-
   .works-wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -440,7 +428,6 @@ ul li {
   .work-project-wrapper {
     grid-column: 1 / span 3;
   }
-
 }
 
 .about-me-section {
@@ -528,7 +515,6 @@ ul li {
   }
 }
 
-
 .skills-section {
   width: 100%;
   background-color: var(--color-primary);
@@ -598,8 +584,6 @@ ul li {
     margin-top: 0;
   }
 }
-
-
 
 .contact-info {
   display: flex;
