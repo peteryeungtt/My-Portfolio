@@ -189,7 +189,7 @@ ul li {
   color: #1c1a19;
   font-size: 40px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 5rem;
 }
 
 .works-title-line {
@@ -443,9 +443,9 @@ ul li {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   position: relative;
-  margin-top: 10rem;
+  margin-top: 5rem;
   padding: 5rem 0;
   overflow: hidden;
 }
@@ -514,12 +514,18 @@ ul li {
   .about-me-text-wrapper {
     width: 600px;
     height: 300px;
-    margin-left: -200px;
   }
 
   .about-me-illustration {
     width: 40%;
     height: 300px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .about-me-text-wrapper {
+    width: 70%;
+    margin-left: 40px;
   }
 }
 
