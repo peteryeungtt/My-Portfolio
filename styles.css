@@ -205,6 +205,14 @@ ul li {
   margin: 2rem 2rem 0 2rem;
 }
 
+.ease-out-effect {
+  transition: transform 0.2s ease-out;
+}
+
+.ease-out-effect:hover {
+  transform: scale(1.05);
+}
+
 @media only screen and (min-width: 768px) {
   .works-title-wrapper {
     display: flex;
