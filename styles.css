@@ -55,6 +55,14 @@ ul li {
   width: 80%;
 }
 
+.orange-effect {
+  transition: color 0.3s;
+}
+
+.orange-effect:hover {
+  color: var(--color-secondary);
+}
+
 .menu-style {
   font-family: var(--font-inter);
   font-size: 1.5rem;
@@ -203,6 +211,14 @@ ul li {
 
 .works-info {
   margin: 2rem 2rem 0 2rem;
+}
+
+.ease-out-effect {
+  transition: transform 0.2s ease-out;
+}
+
+.ease-out-effect:hover {
+  transform: scale(1.05);
 }
 
 @media only screen and (min-width: 768px) {
@@ -706,14 +722,6 @@ ul li {
   outline-style: solid;
 }
 
-input[type="text"]:focus {
-  border: 3px solid var(--color-secondary);
-}
-
-input[type="email"]:focus {
-  border: 3px solid var(--color-secondary);
-}
-
 textarea:focus,
 input:focus {
   outline: none;
@@ -736,5 +744,10 @@ input:focus {
   .form-button {
     justify-content: left;
     padding-left: 0;
+  }
+
+  input:hover {
+    transform: translateX(1rem);
+    border-color: var(--color-secondary);
   }
 }
