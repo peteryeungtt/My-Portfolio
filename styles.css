@@ -722,14 +722,6 @@ ul li {
   outline-style: solid;
 }
 
-input[type="text"]:focus {
-  border: 3px solid var(--color-secondary);
-}
-
-input[type="email"]:focus {
-  border: 3px solid var(--color-secondary);
-}
-
 textarea:focus,
 input:focus {
   outline: none;
@@ -753,9 +745,9 @@ input:focus {
     justify-content: left;
     padding-left: 0;
   }
-  
+
   input:hover {
     transform: translateX(1rem);
-}
-
+    border-color: var(--color-secondary);
+  }
 }
