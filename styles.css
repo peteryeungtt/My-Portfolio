@@ -333,6 +333,7 @@ ul li {
   margin: 0.5rem auto;
   display: flex;
   align-items: flex-end;
+  background-size: cover;
 }
 
 .other-work-title {
@@ -395,6 +396,10 @@ ul li {
 }
 
 @media only screen and (min-width: 768px) {
+  .works-info {
+    margin: 2rem 6rem 0 6rem;
+  }
+
   .work-project-wrapper {
     grid-column: 1 / span 2;
     flex-direction: row;
@@ -410,17 +415,16 @@ ul li {
   }
 
   .work-project-img {
-    width: 45%;
-    margin-left: 4rem;
+    width: 53%;
   }
 
   .work-project-title {
     font-size: 40px;
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .work-project-text {
-    margin-left: 2rem;
+    margin-left: 1rem;
   }
 
   .work-project-description {
@@ -438,11 +442,27 @@ ul li {
   }
 
   .other-work-see-btn {
-    visibility: hidden;
+    display: none;
   }
 
   .other-work-wrapper:hover .other-work-see-btn {
-    visibility: visible;
+    display: block;
+  }
+
+  .other-work-wrapper:hover .other-work-description {
+    visibility: hidden;
+  }
+
+  .other-work-wrapper:hover .other-work-title {
+    visibility: hidden;
+  }
+
+  .other-work-wrapper:hover .other-work-tags {
+    visibility: hidden;
+  }
+
+  .other-work-wrapper:hover {
+    background-image: url("images/newproject .png");
   }
 }
 
@@ -734,11 +754,26 @@ input:focus {
 
   .contact-form-wrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: left;
+  }
+
+  .contact-info-left {
+    width: 45%;
+  }
+
+  .footer-text {
+    text-align: left;
+    padding-top: 0;
+    margin-left: 6rem;
   }
 
   .contact-info {
-    width: 600px;
+    align-items: flex-start;
+  }
+
+  .contact-info-right {
+    width: 55%;
+    text-align: left;
   }
 
   .form-button {
