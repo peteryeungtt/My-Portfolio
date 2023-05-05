@@ -55,6 +55,14 @@ ul li {
   width: 80%;
 }
 
+.orange-effect {
+  transition: color 0.3s;
+}
+
+.orange-effect:hover {
+  color: var(--color-secondary);
+}
+
 .menu-style {
   font-family: var(--font-inter);
   font-size: 1.5rem;
