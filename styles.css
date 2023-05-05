@@ -753,4 +753,9 @@ input:focus {
     justify-content: left;
     padding-left: 0;
   }
+  
+  input:hover {
+    transform: translateX(1rem);
+}
+
 }
