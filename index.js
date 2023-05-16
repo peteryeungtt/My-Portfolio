@@ -8,6 +8,7 @@ const menuItem2 = document.getElementById('item2');
 const menuItem3 = document.getElementById('item3');
 const mobileMenu = document.querySelector('.mobile-menu');
 
+
 function menuClick() {
   myLogo.classList.add('visibility-hidden');
   menuDesktop.classList.add('visibility-hidden');
@@ -37,3 +38,14 @@ function closeClick() {
 closeIcon.addEventListener('click', closeClick);
 
 // Email Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const lowerCaseRegexChecker = /[A-Z]/;
+
+form.addEventListener('submit', (e) => {
+  if (lowerCaseRegexChecker.test(email.value.trim())) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('small');
+    errorMessage.classList.remove('display-none');
+  }
+});
