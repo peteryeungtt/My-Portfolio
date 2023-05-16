@@ -120,6 +120,7 @@ git clone https://github.com/peteryeungtt/My-Portfolio.git
 - Twitter: [@Peter](https://twitter.com/PeterYeungJW)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/peter-yeung-1a7251260/)
 
+Collaborator partners: Kevin Cruz and Ahmed Eid
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->

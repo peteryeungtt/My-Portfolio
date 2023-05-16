@@ -20,3 +20,17 @@ function menuClick() {
   mobileMenu.classList.add('mobile-full-height');
   document.body.classList.add('no-scroll');
 }
+
+closeIcon.addEventListener('click', closeClick);
+
+function closeClick() {
+  myLogo.classList.remove('visibility-hidden');
+  menuDesktop.classList.remove('visibility-hidden');
+  hambugerIcon.classList.remove('display-none');
+  menuItem1.classList.remove('display-block');
+  menuItem2.classList.remove('display-block');
+  menuItem3.classList.remove('display-block');
+  closeIcon.classList.remove('display-block');
+  mobileMenu.classList.remove('mobile-full-height');
+  document.body.classList.remove('no-scroll');
+}
