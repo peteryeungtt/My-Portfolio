@@ -8,7 +8,6 @@ const menuItem2 = document.getElementById('item2');
 const menuItem3 = document.getElementById('item3');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-
 function menuClick() {
   myLogo.classList.add('visibility-hidden');
   menuDesktop.classList.add('visibility-hidden');
