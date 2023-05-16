@@ -13,7 +13,7 @@
 <body>
   <header class="navbar">
     <nav class="navbar-wrapper">
-      <div class="my-logo-wrapper"><a class="my-logo" href="#">My Logo</a>
+      <div class="my-logo-wrapper"><a class="my-logo orange-effect" href="#">My Logo</a>
       </div>
       <div class="right-menu">
         <a class="menu-style orange-effect" href="#work">Portoflio</a>
@@ -23,10 +23,18 @@
       </div>
       <div>
         <img class="hamburger-menu" src="images/hamburger.svg" alt="Hamburger Menu" />
+        <img class="close-menu-width display-none" id="closeIcon" src="images/close.svg" alt="Close Menu" />
       </div>
     </nav>
-
+    <div class="mobile-menu" onclick="closeClick()">
+      <a class="menu-style-mobile orange-effect display-none" id="item1" onclick="closeClick()"
+        href="#work">Portoflio</a>
+      <a class="menu-style-mobile orange-effect display-none" id="item2" onclick="closeClick()" href=" #about">About</a>
+      <a class="menu-style-mobile orange-effect display-none" id="item3" onclick="closeClick()"
+        href="#contact">Contact</a>
+    </div>
   </header>
+
   <section class="headline">
     <div class="headline-wrapper">
       <div class="header-greeting">
@@ -299,6 +307,7 @@
       </form>
     </div>
   </footer>
+  <script src="index.js"></script>
 </body>
 
 </html>

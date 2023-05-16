@@ -25,6 +25,55 @@ ul li {
   list-style: none;
 }
 
+.visibility-hidden {
+  visibility: hidden;
+}
+
+.visibility-show {
+  visibility: visible;
+}
+
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
+.close-menu-width {
+  width: 4em;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: first baseline;
+}
+
+.mobile-full-height {
+  height: 100vh;
+}
+
+.menu-style-mobile {
+  margin-top: 3.5rem;
+  font-family: var(--font-inter);
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0;
+  margin-right: 4rem;
+  color: #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .navbar {
   background-color: #3c3a39;
   padding: 2em;
@@ -37,16 +86,25 @@ ul li {
   align-items: center;
 }
 
+.my-logo-wrapper {
+  width: 10rem;
+}
+
 .my-logo {
   color: var(--color-white);
   font-family: var(--font-roboto);
   font-size: 2em;
   font-weight: 200;
+  width: 10rem;
 }
 
 .hamburger-menu {
   width: 3.5em;
   filter: invert(100%);
+}
+
+.hamburger-menu:hover {
+  transform: scale(1.25);
 }
 
 .right-menu {
@@ -218,10 +276,14 @@ ul li {
 }
 
 .ease-out-effect:hover {
-  transform: scale(1.05);
+  transform: none;
 }
 
 @media only screen and (min-width: 768px) {
+  .ease-out-effect:hover {
+    transform: scale(1.05);
+  }
+
   .works-title-wrapper {
     display: flex;
     justify-content: center;

@@ -46,6 +46,8 @@ After you're finished please remove all the comments and instructions!
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -110,7 +112,17 @@ git clone https://github.com/peteryeungtt/My-Portfolio.git
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
+### Install
+
+Install this project with:
+
+The user can run npm install to get the dependencies of the project
+
+### Usage
+
+To run the project, execute the following command:
+
+The user should make use of live server on vs code or open the index file directly
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -119,6 +131,8 @@ git clone https://github.com/peteryeungtt/My-Portfolio.git
 - GitHub: [@peteryeuntt](https://github.com/peteryeungtt)
 - Twitter: [@Peter](https://twitter.com/PeterYeungJW)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/peter-yeung-1a7251260/)
+
+Collaborator partners: Kevin Cruz and Ahmed Eid
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
