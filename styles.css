@@ -25,7 +25,6 @@ ul li {
   list-style: none;
 }
 
-/*Mobile-Menu*/
 .visibility-hidden {
   visibility: hidden;
 }
@@ -64,8 +63,8 @@ ul li {
   line-height: 2rem;
   letter-spacing: 0;
   margin-right: 4rem;
-  color: #FFF5E1;
-  border-bottom: 1px solid #6F6C6B;
+  color: #fff5e1;
+  border-bottom: 1px solid #6f6c6b;
   padding-bottom: 2rem;
   padding-left: 2rem;
   width: 100%;
@@ -74,8 +73,6 @@ ul li {
 .no-scroll {
   overflow: hidden;
 }
-
-/*Mobile-Menu*/
 
 .navbar {
   background-color: #3c3a39;
@@ -87,7 +84,6 @@ ul li {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .my-logo-wrapper {

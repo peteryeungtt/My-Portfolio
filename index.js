@@ -1,10 +1,8 @@
-let myLogo = document.querySelector(".my-logo-wrapper");
-let menuDesktop = document.querySelector(".right-menu")
-let hambugerIcon = document.querySelector(".hamburger-menu");
-let closeIcon = document.getElementById("closeIcon");
-let menuItem1 = document.getElementById("item1");
-let menuItem2 = document.getElementById("item2");
-let menuItem3 = document.getElementById("item3");
-let mobileMenu = document.querySelector(".mobile-menu");
-
-
+const myLogo = document.querySelector('.my-logo-wrapper');
+const menuDesktop = document.querySelector('.right-menu');
+const hambugerIcon = document.querySelector('.hamburger-menu');
+const closeIcon = document.getElementById('closeIcon');
+const menuItem1 = document.getElementById('item1');
+const menuItem2 = document.getElementById('item2');
+const menuItem3 = document.getElementById('item3');
+const mobileMenu = document.querySelector('.mobile-menu');
