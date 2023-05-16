@@ -7,8 +7,6 @@ const menuItem2 = document.getElementById('item2');
 const menuItem3 = document.getElementById('item3');
 const mobileMenu = document.querySelector('.mobile-menu');
 
-hambugerIcon.addEventListener('click', menuClick);
-
 function menuClick() {
   myLogo.classList.add('visibility-hidden');
   menuDesktop.classList.add('visibility-hidden');
@@ -21,7 +19,7 @@ function menuClick() {
   document.body.classList.add('no-scroll');
 }
 
-closeIcon.addEventListener('click', closeClick);
+hambugerIcon.addEventListener('click', menuClick);
 
 function closeClick() {
   myLogo.classList.remove('visibility-hidden');
@@ -34,3 +32,5 @@ function closeClick() {
   mobileMenu.classList.remove('mobile-full-height');
   document.body.classList.remove('no-scroll');
 }
+
+closeIcon.addEventListener('click', closeClick);
