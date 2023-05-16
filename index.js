@@ -1,3 +1,4 @@
+// Mobile Menu
 const myLogo = document.querySelector('.my-logo-wrapper');
 const menuDesktop = document.querySelector('.right-menu');
 const hambugerIcon = document.querySelector('.hamburger-menu');
@@ -34,3 +35,5 @@ function closeClick() {
 }
 
 closeIcon.addEventListener('click', closeClick);
+
+// Email Form Validation
