@@ -55,3 +55,10 @@ const myTempStorage = {
   email: '',
   message: '',
 };
+
+form.addEventListener('change', () => {
+  myTempStorage.name = document.getElementById('name').value;
+  myTempStorage.email = document.getElementById('email').value;
+  myTempStorage.message = document.getElementById('message').value;
+  localStorage.setItem('storageString', JSON.stringify(myTempStorage));
+});
