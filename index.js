@@ -48,3 +48,10 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('display-none');
   }
 });
+
+// Local Storage
+const myTempStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
