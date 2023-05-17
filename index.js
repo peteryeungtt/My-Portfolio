@@ -48,3 +48,23 @@ form.addEventListener('submit', (e) => {
     errorMessage.classList.remove('display-none');
   }
 });
+
+// Local Storage
+const myTempStorage = {
+  name: '',
+  email: '',
+  message: '',
+};
+
+form.addEventListener('change', () => {
+  myTempStorage.name = document.getElementById('name').value;
+  myTempStorage.email = document.getElementById('email').value;
+  myTempStorage.message = document.getElementById('message').value;
+  localStorage.setItem('storageString', JSON.stringify(myTempStorage));
+});
+
+const storageObject = JSON.parse(localStorage.getItem('storageString'));
+
+document.getElementById('name').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('message').value = storageObject.message;
