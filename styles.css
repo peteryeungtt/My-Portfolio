@@ -25,6 +25,14 @@ ul li {
   list-style: none;
 }
 
+.show-error-message {
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: var(--font-poppins);
+  color: red;
+}
+
 .visibility-hidden {
   visibility: hidden;
 }

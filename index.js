@@ -1,3 +1,4 @@
+// Mobile Menu
 const myLogo = document.querySelector('.my-logo-wrapper');
 const menuDesktop = document.querySelector('.right-menu');
 const hambugerIcon = document.querySelector('.hamburger-menu');
@@ -34,3 +35,16 @@ function closeClick() {
 }
 
 closeIcon.addEventListener('click', closeClick);
+
+// Email Form Validation
+const form = document.getElementById('form');
+const email = document.getElementById('email');
+const lowerCaseRegexChecker = /[A-Z]/;
+
+form.addEventListener('submit', (e) => {
+  if (lowerCaseRegexChecker.test(email.value.trim())) {
+    e.preventDefault();
+    const errorMessage = document.querySelector('small');
+    errorMessage.classList.remove('display-none');
+  }
+});

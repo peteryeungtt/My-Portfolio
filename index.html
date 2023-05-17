@@ -4,8 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles.css" />
   <title>My Portfolio</title>
 </head>
@@ -260,7 +259,7 @@
 
   <footer id="contact">
     <div>
-      <form class="contact-form" method="POST" action="https://formspree.io/f/xpzbadnj">
+      <form id="form" class="contact-form" method="POST" action="https://formspree.io/f/xpzbadnj">
         <div class="contact-form-wrapper">
           <div class="contact-info contact-info-left">
             <p class="footer-text">
@@ -275,14 +274,15 @@
                   pattern="[a-zA-Z\s]{1,30}" />
               </li>
               <li>
-                <input type="email" id="email" name="email" placeholder="Email address" required
-                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                <input type="email" id="email" name="email" placeholder="Email address" required />
               </li>
               <li>
                 <textarea id="message" name="message" rows="7" cols="30" maxlength="500"
                   placeholder="Write me something..." required></textarea>
               </li>
               <li class="form-button"><button type="submit">Get in touch</button></li>
+              <small class="display-none show-error-message">Invalid email format: Please use lowercase letters
+                only.</small>
             </ul>
           </div>
         </div>
