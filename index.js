@@ -62,3 +62,9 @@ form.addEventListener('change', () => {
   myTempStorage.message = document.getElementById('message').value;
   localStorage.setItem('storageString', JSON.stringify(myTempStorage));
 });
+
+const storageObject = JSON.parse(localStorage.getItem('storageString'));
+
+document.getElementById('name').value = storageObject.name;
+document.getElementById('email').value = storageObject.email;
+document.getElementById('message').value = storageObject.message;
