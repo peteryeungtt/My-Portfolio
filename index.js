@@ -74,12 +74,12 @@ if (storageObject) {
 // Work Projects
 const projects = [
   {
-    title: 'Multi-Post Stories',
+    title: 'Multi Post Stories',
     image: 'images/modal-picture0.png',
     image1: 'images/project1.png',
     description:
-      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
     source_link: 'https://github.com/peteryeungtt/My-Portfolio',
   },
@@ -268,14 +268,23 @@ const xButton = document.getElementById('x-popup');
 const popupModal = document.getElementById('popup-wrapper');
 const click = document.querySelector('.see-work-btn');
 const allotherclicks = document.querySelectorAll('.other-work-see-btn');
-function open() {
+
+function openModal() {
   popupModal.classList.add('display-flex');
 }
-function close() {
+
+function closeModal() {
   popupModal.classList.remove('display-flex');
 }
-click.addEventListener('click', open);
-xButton.addEventListener('click', close);
-for (let i = 0; i <= 6; i += 1) {
-  allotherclicks[i].addEventListener('click', open);
+
+if (click) {
+  click.addEventListener('click', openModal);
 }
+
+if (xButton) {
+  xButton.addEventListener('click', closeModal);
+}
+
+allotherclicks.forEach((btn) => {
+  btn.addEventListener('click', openModal);
+});
