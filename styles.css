@@ -41,7 +41,7 @@ ul li {
   visibility: visible;
 }
 
-.display-none {
+.hidden {
   display: none;
 }
 
@@ -414,6 +414,18 @@ ul li {
 }
 
 .project3-background-image {
+  background-image: url("images/other_project3.png");
+}
+
+.project4-background-image {
+  background-image: url("images/other_project1.png");
+}
+
+.project5-background-image {
+  background-image: url("images/other_project2.png");
+}
+
+.project6-background-image {
   background-image: url("images/other_project3.png");
 }
 
@@ -882,4 +894,236 @@ input:focus {
     transform: translateX(1rem);
     border-color: var(--color-secondary);
   }
+}
+
+/* Popup */
+.tag-items {
+  box-sizing: border-box;
+  padding: 1rem 1.2rem;
+  background: #fff;
+  border: 1px solid #8993a4;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #3c3a39;
+}
+
+/* Popup */
+
+.popup-modal {
+  z-index: 999;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.1rem);
+  transition: all 0.5s ease;
+  top: 0;
+}
+
+.popUp {
+  display: flex;
+}
+
+.popup-inner {
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+  margin: 1rem 1rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.popup-close-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+
+.title-descr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-heading-pop {
+  font-family: var(--font-crete-round);
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  color: #172b4d;
+}
+
+.popup-close-btn svg {
+  cursor: pointer;
+}
+
+.popup-tag-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.popup-tag-list li {
+  font-family: var(--font-poppins);
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  border: 1px solid #3c3a39;
+}
+
+.popup-feature {
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #1c1a19;
+}
+
+.popup-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.popup-info-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popup-description {
+  width: inherit;
+  font-family: var(--font-inter);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 24px;
+  color: #344563;
+}
+
+.popup-btn-holder {
+  display: flex;
+  gap: 20px;
+}
+
+.popup-btn {
+  color: #fff;
+  background-color: #ff6b00;
+  display: flex;
+  align-items: flex-start;
+  padding: 12px;
+  gap: 10px;
+  border: 1px solid #ff6b00;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.popup-btn svg path {
+  fill: #fff;
+}
+
+.popup-btn:hover svg path {
+  fill: var(--color-secondary);
+}
+
+.popup-btn:hover {
+  background-color: #fff5e1;
+  color: var(--color-secondary);
+  outline-color: var(--color-secondary);
+  outline-style: solid;
+}
+
+.desktop-des1 {
+  display: none;
+}
+
+@media screen and (min-width: 550px) {
+  .popup-close-btn {
+    gap: 22px;
+  }
+
+  .project-heading-pop {
+    text-align: left;
+    font-style: normal;
+  }
+
+  .popup-tag-list li {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    border: 1px solid #979493;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .popup-info {
+    display: flex;
+    font-size: 100%;
+  }
+
+  .popup-info-holder {
+    align-items: flex-start;
+  }
+
+  .popup-btn-holder {
+    justify-content: flex-start;
+    margin-top: auto;
+    gap: 20px;
+  }
+
+  .popup-inner {
+    padding: 1rem;
+    max-width: 85%;
+  }
+
+  .desktop-des1 {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .popup-info {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  .popup-btn {
+    font-size: 1.4rem;
+    padding: 7px;
+  }
+}
+
+@media screen and (min-width: 862px) {
+  .popup-btn {
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
+.display-none {
+  display: none;
+}
+
+.display-flex {
+  display: flex;
 }

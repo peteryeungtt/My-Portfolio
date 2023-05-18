@@ -22,15 +22,13 @@
       </div>
       <div>
         <img class="hamburger-menu" src="images/hamburger.svg" alt="Hamburger Menu" />
-        <img class="close-menu-width display-none" id="closeIcon" src="images/close.svg" alt="Close Menu" />
+        <img class="close-menu-width hidden" id="closeIcon" src="images/close.svg" alt="Close Menu" />
       </div>
     </nav>
     <div class="mobile-menu" onclick="closeClick()">
-      <a class="menu-style-mobile orange-effect display-none" id="item1" onclick="closeClick()"
-        href="#work">Portoflio</a>
-      <a class="menu-style-mobile orange-effect display-none" id="item2" onclick="closeClick()" href=" #about">About</a>
-      <a class="menu-style-mobile orange-effect display-none" id="item3" onclick="closeClick()"
-        href="#contact">Contact</a>
+      <a class="menu-style-mobile orange-effect hidden" id="item1" onclick="closeClick()" href="#work">Portoflio</a>
+      <a class="menu-style-mobile orange-effect hidden" id="item2" onclick="closeClick()" href=" #about">About</a>
+      <a class="menu-style-mobile orange-effect hidden" id="item3" onclick="closeClick()" href="#contact">Contact</a>
     </div>
   </header>
 
@@ -80,115 +78,6 @@
       <div class="works-title-line"></div>
     </div>
     <div class="works-wrapper">
-      <div class="work-project-wrapper">
-        <img class="work-project-img" src="images/project1.png" alt="Project Image" />
-        <div class="work-project-text">
-          <h3 class="work-project-title">Multi-Post Stories</h3>
-          <p class="work-project-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a standard
-            dummy text.
-          </p>
-          <ul class="work-info-tags">
-            <li class="work-info-tag">CSS</li>
-            <li class="work-info-tag">HTML</li>
-            <li class="work-info-tag">Bootstrap</li>
-            <li class="work-info-tag">Ruby</li>
-          </ul>
-          <a class="see-work-btn" href="#">See Project</a>
-        </div>
-      </div>
-      <div class="other-work-wrapper project1-background-image ease-out-effect">
-        <div class="other-work-text">
-          <h3 class="other-work-title">Profesional Art Printing Data</h3>
-          <p class="other-work-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="other-work-tags">
-            <li class="other-work-tag">HTML</li>
-            <li class="other-work-tag">Bootstrap</li>
-            <li class="other-work-tag">Ruby</li>
-          </ul>
-          <a class="other-work-see-btn" href="#">See Project</a>
-        </div>
-      </div>
-      <div class="other-work-wrapper project2-background-image ease-out-effect">
-        <div class="other-work-text">
-          <h3 class="other-work-title">Data Dashboard Healthcare</h3>
-          <p class="other-work-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="other-work-tags">
-            <li class="other-work-tag">HTML</li>
-            <li class="other-work-tag">Bootstrap</li>
-            <li class="other-work-tag">Ruby</li>
-          </ul>
-          <a class="other-work-see-btn" href="#">See Project</a>
-        </div>
-      </div>
-      <div class="other-work-wrapper project3-background-image ease-out-effect">
-        <div class="other-work-text">
-          <h3 class="other-work-title">Website Portfolio</h3>
-          <p class="other-work-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="other-work-tags">
-            <li class="other-work-tag">HTML</li>
-            <li class="other-work-tag">Bootstrap</li>
-            <li class="other-work-tag">Ruby</li>
-          </ul>
-          <a class="other-work-see-btn" href="#">See Project</a>
-        </div>
-      </div>
-      <div class="other-work-wrapper project1-background-image ease-out-effect">
-        <div class="other-work-text">
-          <h3 class="other-work-title">Profesional Art Printing Data More</h3>
-          <p class="other-work-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="other-work-tags">
-            <li class="other-work-tag">HTML</li>
-            <li class="other-work-tag">Bootstrap</li>
-            <li class="other-work-tag">Ruby</li>
-          </ul>
-          <a class="other-work-see-btn" href="#">See Project</a>
-        </div>
-      </div>
-      <div class="other-work-wrapper project2-background-image ease-out-effect">
-        <div class="other-work-text">
-          <h3 class="other-work-title">Data Dashboard Healthcare</h3>
-          <p class="other-work-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="other-work-tags">
-            <li class="other-work-tag">HTML</li>
-            <li class="other-work-tag">Bootstrap</li>
-            <li class="other-work-tag">Ruby</li>
-          </ul>
-          <a class="other-work-see-btn" href="#">See Project</a>
-        </div>
-      </div>
-      <div class="other-work-wrapper project3-background-image ease-out-effect">
-        <div class="other-work-text">
-          <h3 class="other-work-title">Website Portfolio</h3>
-          <p class="other-work-description">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required. Has been the industry's standard.
-          </p>
-          <ul class="other-work-tags">
-            <li class="other-work-tag">HTML</li>
-            <li class="other-work-tag">Bootstrap</li>
-            <li class="other-work-tag">Ruby</li>
-          </ul>
-          <a class="other-work-see-btn" href="#">See Project</a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -307,6 +196,7 @@
       </form>
     </div>
   </footer>
+  <div id="popup-parent"></div>
   <script src="index.js"></script>
 </body>
 

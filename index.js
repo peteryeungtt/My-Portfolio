@@ -68,3 +68,140 @@ const storageObject = JSON.parse(localStorage.getItem('storageString'));
 document.getElementById('name').value = storageObject.name;
 document.getElementById('email').value = storageObject.email;
 document.getElementById('message').value = storageObject.message;
+
+// Work Projects
+const projects = [
+  {
+    title: 'Multi-Post Stories',
+    image: 'images/modal-picture0.png',
+    image1: 'images/project1.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+  {
+    title: 'Professional Art Printing Data',
+    image: 'images/other_project1.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    image: 'images/other_project2.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+  {
+    title: 'Website Portfolio',
+    image: 'images/other_project3.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+  {
+    title: 'Professional Art Printing Data',
+    image: 'images/other_project1.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    image: 'images/other_project2.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+  {
+    title: 'Website Portfolio',
+    image: 'images/other_project3.png',
+    description:
+      "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+    technologies: ['html', 'bootstrap', 'Ruby'],
+    live_link: 'https://peteryeungtt.github.io/My-Portfolio/',
+    source_link: 'https://github.com/peteryeungtt/My-Portfolio',
+  },
+];
+
+// Main Project
+const workProjectWrapper = document.createElement('div');
+workProjectWrapper.classList.add('work-project-wrapper');
+const workProjectImg = document.createElement('img');
+workProjectImg.classList.add('work-project-img');
+workProjectImg.src = projects[0].image1;
+workProjectImg.alt = 'Project Image';
+workProjectWrapper.appendChild(workProjectImg);
+const workProjectText = document.createElement('div');
+workProjectText.classList.add('work-project-text');
+const workProjectTitle = document.createElement('h3');
+workProjectTitle.classList.add('work-project-title');
+workProjectTitle.textContent = projects[0].title;
+workProjectText.appendChild(workProjectTitle);
+const workProjectDescription = document.createElement('p');
+workProjectDescription.classList.add('work-project-description');
+workProjectDescription.textContent = projects[0].description;
+workProjectText.appendChild(workProjectDescription);
+const workInfoTags = document.createElement('ul');
+workInfoTags.classList.add('work-info-tags');
+const tags = projects[0].technologies;
+tags.forEach((tag) => {
+  const tagItem = document.createElement('li');
+  tagItem.classList.add('work-info-tag');
+  tagItem.textContent = tag;
+  workInfoTags.appendChild(tagItem);
+});
+workProjectText.appendChild(workInfoTags);
+const seeProjectBtn = document.createElement('a');
+seeProjectBtn.classList.add('see-work-btn');
+seeProjectBtn.textContent = 'See Project';
+workProjectText.appendChild(seeProjectBtn);
+workProjectWrapper.appendChild(workProjectText);
+const workSection = document.querySelector('.works-wrapper');
+workSection.appendChild(workProjectWrapper);
+
+// 6 Project Cards Section
+for (let i = 1; i <= 6; i += 1) {
+  const otherWorkWrapper = document.createElement('div');
+  otherWorkWrapper.classList.add('other-work-wrapper', 'ease-out-effect');
+  otherWorkWrapper.classList.add(`project${i}-background-image`);
+  const otherWorkText = document.createElement('div');
+  otherWorkText.classList.add('other-work-text');
+  const otherWorkTitle = document.createElement('h3');
+  otherWorkTitle.classList.add('other-work-title');
+  otherWorkTitle.textContent = projects[i].title;
+  otherWorkText.appendChild(otherWorkTitle);
+  const otherWorkDescription = document.createElement('p');
+  otherWorkDescription.classList.add('other-work-description');
+  otherWorkDescription.textContent = projects[0].description;
+  otherWorkText.appendChild(otherWorkDescription);
+  const otherWorkTags = document.createElement('ul');
+  otherWorkTags.classList.add('other-work-tags');
+  const tags = projects[i].technologies;
+  tags.forEach((tag) => {
+    const tagItem = document.createElement('li');
+    tagItem.classList.add('other-work-tag');
+    tagItem.textContent = tag;
+    otherWorkTags.appendChild(tagItem);
+  });
+  otherWorkText.appendChild(otherWorkTags);
+  const otherWorkSeeBtn = document.createElement('a');
+  otherWorkSeeBtn.classList.add('other-work-see-btn');
+  otherWorkSeeBtn.textContent = 'See Project';
+  otherWorkText.appendChild(otherWorkSeeBtn);
+  otherWorkWrapper.appendChild(otherWorkText);
+  workSection.appendChild(otherWorkWrapper);
+}
