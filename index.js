@@ -205,3 +205,19 @@ for (let i = 1; i <= 6; i += 1) {
   otherWorkWrapper.appendChild(otherWorkText);
   workSection.appendChild(otherWorkWrapper);
 }
+
+const xButton = document.getElementById('x-popup');
+const popupModal = document.getElementById('popup-wrapper');
+const click = document.querySelector('.see-work-btn');
+const allotherclicks = document.querySelectorAll('.other-work-see-btn');
+function open() {
+  popupModal.classList.add('display-flex');
+}
+function close() {
+  popupModal.classList.remove('display-flex');
+}
+click.addEventListener('click', open);
+xButton.addEventListener('click', close);
+for (let i = 0; i <= 6; i += 1) {
+  allotherclicks[i].addEventListener('click', open);
+}
