@@ -1025,7 +1025,6 @@ input:focus {
   letter-spacing: 0.03em;
   line-height: 24px;
   margin-bottom: 0.2rem;
-  align-items: center;
 }
 
 .popup-btn svg path {
@@ -1083,7 +1082,6 @@ input:focus {
     font-style: normal;
     font-weight: 400;
     font-family: var(--font-crete-round);
-    margin-bottom: 0rem;
   }
 
   .tag-items {
@@ -1111,9 +1109,7 @@ input:focus {
     padding: 2.4rem;
   }
 
-  .popup-description {
-    line-height: 30px;
-  }
+  .popup-description {}
 }
 
 @media screen and (min-width: 862px) {
