@@ -65,9 +65,11 @@ form.addEventListener('change', () => {
 
 const storageObject = JSON.parse(localStorage.getItem('storageString'));
 
-document.getElementById('name').value = storageObject.name;
-document.getElementById('email').value = storageObject.email;
-document.getElementById('message').value = storageObject.message;
+if (storageObject) {
+  document.getElementById('name').value = storageObject.name;
+  document.getElementById('email').value = storageObject.email;
+  document.getElementById('message').value = storageObject.message;
+}
 
 // Work Projects
 const projects = [
