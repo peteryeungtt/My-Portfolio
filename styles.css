@@ -1007,6 +1007,7 @@ input:focus {
 .popup-btn-holder {
   display: flex;
   gap: 20px;
+  justify-content: center;
 }
 
 .popup-btn {
@@ -1061,8 +1062,6 @@ input:focus {
   }
 
   .popup-btn-holder {
-    justify-content: flex-start;
-    margin-top: auto;
     gap: 20px;
   }
 
@@ -1071,8 +1070,8 @@ input:focus {
     max-width: 85%;
   }
 
-  .desktop-des1 {
-    display: inline;
+  .popup-description {
+    font-size: 15px;
   }
 }
 
@@ -1101,12 +1100,20 @@ input:focus {
   }
 
   .popup-btn {
-    font-size: 1.4rem;
+    font-size: 14px;
     padding: 7px;
   }
 
   .popup-inner {
     padding: 2.4rem;
+  }
+
+  .desktop-des1 {
+    display: inline;
+  }
+
+  .popup-description {
+    font-size: 16px;
   }
 }
 
