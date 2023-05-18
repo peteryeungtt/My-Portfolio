@@ -1025,6 +1025,7 @@ input:focus {
   letter-spacing: 0.03em;
   line-height: 24px;
   margin-bottom: 0.2rem;
+  align-items: center;
 }
 
 .popup-btn svg path {
@@ -1109,20 +1110,18 @@ input:focus {
     padding: 2.4rem;
   }
 
-  .popup-description {}
-}
-
-@media screen and (min-width: 862px) {
-  .popup-btn {
-    font-size: 17px;
-    padding: 12px;
+  @media screen and (min-width: 862px) {
+    .popup-btn {
+      font-size: 17px;
+      padding: 12px;
+    }
   }
-}
 
-.display-none {
-  display: none;
-}
+  .display-none {
+    display: none;
+  }
 
-.display-flex {
-  display: flex;
+  .display-flex {
+    display: flex;
+  }
 }
