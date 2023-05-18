@@ -262,22 +262,22 @@ const container = document.createElement('div');
 container.innerHTML = htmlCode;
 document.body.appendChild(container);
 
-const clickOpen = document.querySelector(".see-work-btn");
-clickOpen.addEventListener("click", openModal);
+const clickOpen = document.querySelector('.see-work-btn');
+clickOpen.addEventListener('click', openModal);
 
 function openModal() {
-  document.getElementById("popup-wrapper").classList.remove("display-none");
+  document.getElementById('popup-wrapper').classList.remove('display-none');
 }
 
-const clickClose = document.getElementById("x-popup");
-clickClose.addEventListener("click", closeModal);
+const clickClose = document.getElementById('x-popup');
+clickClose.addEventListener('click', closeModal);
 
 function closeModal() {
-  document.getElementById("popup-wrapper").classList.add("display-none")
+  document.getElementById('popup-wrapper').classList.add('display-none');
 }
 
-const allOtherButtons = document.querySelectorAll(".other-work-see-btn");
+const allOtherButtons = document.querySelectorAll('.other-work-see-btn');
 
 for (let i = 0; i < 6; i += 1) {
-  allOtherButtons[i].addEventListener("click", openModal);
+  allOtherButtons[i].addEventListener('click', openModal);
 }
